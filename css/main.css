@@ -394,6 +394,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header__top-right {
+    display: none;
+  }
   .header__main-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
