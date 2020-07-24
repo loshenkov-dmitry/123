@@ -1,0 +1,149 @@
+.news {
+  .section__title {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    max-width: 1388px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__cards {
+    display: flex;
+    padding-bottom: 109px;
+    position: relative;
+    min-width: 0;
+    flex: 1;
+  }
+
+  &__card {
+    background: #ffffff;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    max-width: 458px;
+    height: 239px;
+    margin-right: 22px;
+    padding: 20px;
+    flex-basis: 25%;
+
+    &:last-child {
+      margin-right: 75px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    height: 124px;
+    width: 124px;
+    border-radius: 50%;
+    opacity: 0.1;
+    border: 1px solid #000000;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+
+    &-name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #828282;
+      cursor: pointer;
+    }
+
+    &-inner {
+      top: 35px;
+      right: -170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 70px;
+      padding-bottom: 70px;
+    }
+  }
+}
+
+.card {
+  &__day {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 120%;
+    color: #333333;
+    display: block;
+    padding: 35px 355px 0px 39px;
+    margin-bottom: 2px;
+  }
+
+  &__month {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #333333;
+    padding-left: 39px;
+  }
+
+  &__year {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #bdbdbd;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 120%;
+    color: #333333;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding: 0;
+    max-width: 372px;
+    padding-left: 39px;
+    padding-bottom: 30px;
+  }
+}
+
+.news__cards {
+  .slick-track {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .news {
+    &__button {
+      &-inner {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .news__cards {
+    .slick-track {
+      display: flex;
+      max-width: 100%;
+    }
+  }
+}

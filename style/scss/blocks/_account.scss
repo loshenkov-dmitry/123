@@ -1,0 +1,173 @@
+.account {
+  &__container {
+    max-width: 1388px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    font-family: "SFUIDisplay-Bold";
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #88713f;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    width: 194px;
+    height: 57px;
+  }
+
+  &__cards {
+    display: flex;
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    &-wrapper {
+      padding: 82px 70px 0;
+    }
+    &-item {
+      background: #ffffff;
+      box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+      margin-right: 40px;
+      max-width: 458px;
+      height: 569px;
+    }
+  }
+
+  &__card {
+    &-title {
+      font-family: "SFUIDisplay-Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      margin-top: 82px;
+      margin-bottom: 8px;
+    }
+    &-text {
+      font-family: "SFUIDisplay-Light";
+      font-weight: 300;
+      font-size: 14px;
+      max-width: 330px;
+      margin-top: 0;
+      margin-bottom: 56px;
+    }
+
+    &-img {
+      max-width: 272px;
+      width: 100%;
+    }
+  }
+
+  .section__title {
+    max-width: 762px;
+  }
+}
+
+.numbers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 468px;
+  padding-bottom: 101px;
+
+  &__buttons {
+    display: flex;
+  }
+}
+
+.number {
+  &__first {
+    font-family: "SFUIDisplay-Heavy";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 120%;
+    color: #88713f;
+    margin-right: 100px;
+    position: relative;
+    &::after {
+      display: block;
+      content: "";
+      width: 128px;
+      height: 3px;
+      background-color: #333333;
+      position: absolute;
+      left: 30px;
+      top: 30px;
+    }
+  }
+
+  &__last {
+    font-family: "SFUIDisplay-Heavy";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 120%;
+    color: #333333;
+    opacity: 0.7;
+  }
+  &__button-prev {
+    margin-right: 60px;
+  }
+  &__button-prev,
+  &__button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 68px;
+    width: 68px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .account {
+    &.section__title {
+      padding-right: 0;
+    }
+
+    &__button {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  .number {
+    &__first {
+      font-size: 20px;
+
+      &::after {
+        width: 90px;
+        height: 2px;
+        top: 12px;
+      }
+    }
+
+    &__last {
+      font-size: 15px;
+    }
+
+    &__button-prev,
+    &__button-next {
+      height: 44px;
+      width: 44px;
+    }
+  }
+}

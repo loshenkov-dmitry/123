@@ -1,0 +1,168 @@
+.services {
+
+    
+    margin-top: 110px;
+
+    &__container {
+        max-width: 1388px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__img {
+        max-width: 90%;
+        height: auto;
+        margin-left: 36px;
+    }
+
+    &__button {
+        font-family: 'SFUIDisplay-Bold';
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #88713F;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px 40px;
+    }
+
+    &__cards {
+        display: flex;
+        margin-top: 90px;
+        margin-bottom: 190px;
+    }
+
+    &__card {
+        background: #FFFFFF;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
+        max-width: 353px;
+        height: 252px;
+        margin-right: 19px;
+        position: relative;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+        
+            
+            
+            &:hover {
+                &:after {
+                position: absolute;
+                content: '';
+                height: 3px;
+                background-color: #88713F;
+                
+                display: inline-block;
+                bottom: 0;
+                width: 85%;
+                left: 8%;
+            }
+        }
+            // border-bottom: 3px solid #88713F;
+            // max-width: 337px;
+        
+    }
+
+        }
+        
+    
+
+    
+
+
+
+
+    .card {
+
+        &__title {
+        font-family: 'SFUIDisplay-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 120%;
+        color: #333333;
+        margin-bottom: 50px;
+        margin-top: 0;
+        max-width: 350px;
+        padding: 36px;
+        &-link {
+            text-decoration: none;
+            color: #4c84ff;
+        }
+        }
+
+        
+
+        &__icon {
+            display: inline-block;
+            margin-bottom: 54px;
+            margin-left: 51px;
+        }
+    }
+
+
+@media (max-width: 1270px) {
+    .services {
+        margin-top: 0;
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+        &__card {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-right: 30px;
+            }
+            
+            
+        }
+
+        &__img {
+            margin-left: 0;
+            margin-top: 35px;
+        }
+
+
+        
+        
+        }
+
+        .card {
+
+            &__icon {
+                margin-left: 31px;
+            }   
+            }    
+
+        &.services__title {
+            max-width: 566px;
+        }
+}
+
+@media (max-width: 1270px) {
+    .services {
+        margin-top: 0;
+        &__button {
+            font-size: 10px;
+            padding: 13px 45px;
+        }
+
+
+    }
+}

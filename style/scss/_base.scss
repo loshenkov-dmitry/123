@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Regular';
+    src: url(../fonts/SFUIDisplay-Regular.woff2) format('woff2'), 
+        url(..//fonts/SFUIDisplay-Regular.woff) format('woff'); 
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Medium';
+    src: url(../fonts/SFUIDisplay-Medium.woff2) format('woff2'), 
+        url(..//fonts/SFUIDisplay-Medium.woff) format('woff'); 
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Light';
+    src: url(../fonts/SFUIDisplay-Light.woff2) format('woff2'), 
+        url(..//fonts/SFUIDisplay-Light.woff) format('woff'); 
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Bold';
+    src: url(../fonts/SFUIDisplay-Bold.woff2) format('woff2'), 
+        url(..//fonts/SFUIDisplay-Bold.woff) format('woff'); 
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay-Heavy';
+    src: url(../fonts/SFUIDisplay-Heavy.woff2) format('woff2'), 
+        url(..//fonts/SFUIDisplay-Heavy.woff) format('woff'); 
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+}
+
+
+$primary-color: #88713f;
+$space-m: 16px;
+
+
+.section {
+    &__name {
+        font-family: 'SFUIDisplay-Bold';
+        font-weight: bold;
+        display: inline-block;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #88713F;
+
+    }
+
+    &__title {
+        font-family: 'SFUIDisplay-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 120%;
+        color: #333333;
+        max-width: 638px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-right: 150px;
+    }
+
+    &__subtitle {
+        font-family: 'SFUIDisplay-Light';
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 150%;
+        color: #333333;
+        margin-bottom: 47px;
+        max-width: 735px;
+    }
+}
+
+.background {
+    // background: linear-gradient(0deg, #F5F5F5, #F5F5F5), rgba($color: #F5F5F5, $alpha: 0.4);
+    background: rgba($color: #F5F5F5, $alpha: 0.4);
+    border-bottom-right-radius: 50px;
+}
+
+
+body {
+    
+    overflow-x: hidden;
+    font-family: 'SFUIDisplay-Medium';
+    font-style: normal;
+    font-weight: 500;
+    
+}
+
+@media (max-width: 425px) {
+
+    .section {
+        &__name {
+            
+            font-size: 11px;
+    
+        }
+    
+        &__title {
+            font-size: 25px;
+            max-width: 638px;
+            padding-right: 0;
+        }
+    
+        &__subtitle {
+            font-size: 13px;
+        }
+    }
+
+}
